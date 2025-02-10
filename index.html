@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Forms</title>
 </head>
 <body>
-    
+    <div class="main">
+        <form class="form" autocomplete="off">
+            <div>
+                <label for="name" class="label">Full name</label>
+                <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required autofocus>
+                <label for="email" class="label">Email</label>
+                <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+            </div>
+            <div class="select-wrapper">
+                <label for="select" class="label">Message regarding</label>
+                <select name="select" class="select" id="select">
+                    <option value="support">Support</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <label for="message" class="label">Message</label>
+            <input type="text" name="message" id="message" class="input-field" placeholder="Your Message" required>
+            <div class="checkbox">
+                <input type="checkbox" name="subscribe" id="subscribe" checked>
+                <label for="subscribe">Subscribe to newsletter.</label>
+            </div>
+            <button type="submit" class="button">Send message</button>
+        </form>
+    </div>
+    <img src="img/hiclipart2.png" alt="yellow duck">
 </body>
 </html>
